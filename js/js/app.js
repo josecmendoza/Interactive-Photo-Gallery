@@ -11,7 +11,7 @@
       var filter = $(this).val();
 
       $("#gallery li a").each(function() {
-        if ($(this).attr("alt" && "data-title").search(new RegExp(filter, "i")) < 0) {
+        if ($(this).attr("data-title").search(new RegExp(filter, "i")) < 0) {
           $(this).fadeOut();
         } else {
             $(this).fadeIn();
